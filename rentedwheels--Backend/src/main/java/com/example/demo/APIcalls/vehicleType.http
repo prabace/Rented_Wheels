@@ -1,0 +1,29 @@
+###
+POST http://localhost:8080/addWheel
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJjYTEyMyIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzU4MTI5N30.OK7tVKe0rD05dr46Va9uM1Zco9jinjpHtnk8RKJxWD8
+
+{ 
+    "booked": false,
+    "fuelElectric":"electric",
+    "ac":"",
+    "type":"",
+    "seats":"6",
+    "vehicleName":"Yatri",
+    "vehicleType":"two-wheelers",
+    "vehicleRating":"3",
+    "vehicleReview": 2,
+    "vehiclePrice": 100,
+    "vehicleNumber":"B AA 12",
+    "autoManual":"auto",
+    "maxPower":"300",
+    "topSpeed":"130",
+    "vehicleImage":"https://firebasestorage.googleapis.com/v0/b/rentedwheels-d0b3c.appspot.com/o/images%2Fyatri.jpg?alt=media&token=7005292f-932e-4e6c-bef2-1fb42b158f1d",
+    "accelerationTime":"1.2"
+}
+
+###
+DELETE  http://localhost:8080/deleteVehicle/1
+
+###
+GET http://localhost:8080/getVehicle/3

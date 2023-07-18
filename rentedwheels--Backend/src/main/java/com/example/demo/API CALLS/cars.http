@@ -1,0 +1,37 @@
+###
+GET http://localhost:8080/api/login?username=barca123&password=123456
+
+
+###
+POST http://localhost:8080/addUser HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJjYTEyMyIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzQwMTIxNn0._nYyZ9lxppjFz-Z7sNi0mlRt3lr2lufbQLCNmooBlsE
+content-type: application/json
+
+{
+    "address": "Delhi", 
+    "emailAddress": "an@gmail.com",
+    "fullName": "Ankit",
+    "phoneNumber": "9876543210",
+    "pickupOutlet": "Delhi",
+    "admin": false,
+    "deleted": false,
+    "username": "ankitkh",
+    "password": "Ankit123"
+}
+
+###
+GET http://localhost:8080/ratings/25
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJjYTEyMyIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzY0Nzc1MX0.Rh_I8rYpeC-jGuIncffD-0RRRnv-jArhyQs28bcbZ14
+
+###
+DELETE  http://localhost:8080/deleteRating/24
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJjYTEyMyIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzY0Nzc1MX0.Rh_I8rYpeC-jGuIncffD-0RRRnv-jArhyQs28bcbZ14
+###
+DELETE  http://localhost:8080/deleteVehicle/25
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJjYTEyMyIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzY1ODQxM30.kTNZDdCvpGc8V5NJYtRRph_FE4Lzmis4Hs4wue_SsMk
+###
+GET  http://localhost:8080/getBookingByUserId/18
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJjYTEyMyIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzY1MTk0N30.TOOHVars_Cf7wuYsR_UyA9cpaJMXg4bJdCB6_4zV5pE
+###
+GET  http://localhost:8080/rating/30
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJjYTEyMyIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzY1OTE1NX0.lTZJlaEjF-hmpdxDsLC60CsZQv51V2iIalfMEXq_xxo

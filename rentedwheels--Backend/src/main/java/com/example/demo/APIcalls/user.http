@@ -1,0 +1,63 @@
+###
+POST http://localhost:8080/addUser
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJjYTEyMyIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzQ4NDc2NX0.JHgFUguQLpHNO2WL3JQPZqIxgL-dtD_a1I8T9Ctbe8E
+
+{
+    "address": "kathmandu",
+    "emailAddress": "abc@gmail.com",
+    "fullName": "Ankit Khatiwada",
+    "password": "onepiece1234",
+    "phoneNumber": "9803484843",
+    "pickupOutlet": "kadaghari",
+    "admin": false,
+    "deleted": false
+}
+
+###
+POST http://localhost:8080/api/login?username=prabeshdace&password=Noone@1234
+content-type: application/json
+
+###
+GET http://localhost:8080/getVehicles
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWJpbiIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzYzMzA0OX0.Am_AqgkPEKccmD7WLI1b7_ZU2dLRVoSx7qEcpVT66i0
+###
+DELETE http://localhost:8080/deleteUser/5
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuYWJpbiIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzYzMzA0OX0.Am_AqgkPEKccmD7WLI1b7_ZU2dLRVoSx7qEcpVT66i0
+
+###
+POST  http://localhost:8080/addBooking?userId=47&vehicleId=26
+content-type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJwcmFiZXNoZGFjZSIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzQ5NjExM30.Md7uBmaHpc9byAj_PHLTM6e8SOxxD7_RNIm4bSBlajw
+
+{
+    "firstName":"hdsf",
+    "lastName":"hdsf",
+    "mailAddress":"hdsf",
+    "phNumber":"hdsf",
+    "city":"hdsf",
+    "zipCode":"hdsf",
+    "fromDate":"hdsf",
+    "toDate":"hdsf",
+    "vName":"hdsf",
+    "vprice":"hdsf",
+    "vImage":"hdsf",
+    "vNumber":"hdsf",
+    "destination":"hdsf",
+    "citizenshipAttachment":"hdsf"
+
+
+}
+
+###
+
+GET http://localhost:8080/ratings/26
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJjYTEyMyIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzU4ODU4Nn0._LQoBw7SDE_IMUW7t_ICxUoUePSU9CdopLkSJPh-LBg
+###
+
+GET http://localhost:8080/getVehicle/31
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJjYTEyMyIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzYzNjg4MH0.OklrvNk4UkkC2nljkz-gdfP9n-WXHZQdhQQ4vzPHq8M
+###
+
+GET http://localhost:8080/getBookings
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXJjYTEyMyIsInJvbGVzIjpbXSwiaXNzIjoiL2FwaS9sb2dpbiIsImV4cCI6MTY2NzY0MDI5NX0.P9wEWskfzlBKPK8XKu3AVjthzHFHBO1SLpazHJCJ_eI
